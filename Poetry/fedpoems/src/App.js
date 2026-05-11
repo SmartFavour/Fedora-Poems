@@ -24,6 +24,42 @@
 
 // export default App;
 
-function FirstComponent() {
-  return <div>This is FedPoems</div>;
+//Navigation.js
+function Navigation() {
+  return (
+    <nav>
+      <a href="/">Home</a>
+      <a href="/poems">Poems</a>
+      <a href="/about">About</a>
+    </nav>
+  );
 }
+
+//SearchBar.js
+function SearchBar() {
+  return <input type="text" placeholder="Search poems..." />;
+}
+
+//PoemCard.js
+function PoemCard({ title, text }) {
+  return (
+    <div className="card">
+      <h2>{title}</h2>
+      <p>{text}</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Navigation />
+      <SearchBar />
+      <div className="content">
+        <PoemCard title="First Poem" text="This is the test of the poem" />
+        <PoemCard title="Second Poem" text="This is the test of the poem" />
+      </div>
+    </div>
+  );
+}
+export default App;
