@@ -34,7 +34,7 @@ function LoginPage() {
 
       <div>
         <h2 className="form-title">
-          {isLogin ? "Welcome Back" : "Create Accout"}
+          {isLogin ? "Welcome Back" : "Create Account"}
         </h2>
       </div>
 
