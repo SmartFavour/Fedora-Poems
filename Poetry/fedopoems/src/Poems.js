@@ -5,9 +5,10 @@ function Poems() {
     <div>
       <SearchBar />
       <div className="cards-container">
-        <PoemCard title="My Sunshine" content="Haha" />
+        <PoemCard title="My Sunshine" author="Mr. Amexin" content="Haha" />
         <PoemCard
           title="Twinkle Star"
+          author="Banana the Star"
           content="Twinkle twinkle little star how I wonder what you are."
         />
       </div>

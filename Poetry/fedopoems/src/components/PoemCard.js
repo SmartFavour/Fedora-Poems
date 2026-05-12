@@ -1,8 +1,9 @@
 //PoemsCard.js
-function PoemCard({ title, content }) {
+function PoemCard({ title,author, content }) {
   return (
     <div className="poemcard">
-      <h3 className="poem-title">{title}</h3>
+      <h2 className="poem-title">{title}</h2>
+      <p className="poem-author">by {author}</p>
       <p className="poem-content">{content}</p>
     </div>
   );
