@@ -27,11 +27,11 @@ function LoginPage() {
         placeholder="Name:"
       />
       <input
-        type="text"
         value={password}
         onChange={handlePassword}
         className="form-input"
         placeholder="Password: "
+        type="password"
       />
 
       <button type="submit" className="submit-btn">
