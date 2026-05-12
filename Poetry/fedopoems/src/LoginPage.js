@@ -14,7 +14,7 @@ function LoginPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Submitted name: ${name}, password:${password}`);
+    alert(`Submitted name: ${name}`);
   };
 
   return (
