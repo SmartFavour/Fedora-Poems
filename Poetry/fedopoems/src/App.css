@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
 
 .nav-bar {
@@ -55,7 +55,7 @@
 .search-bar {
     border: 1rem;
     padding: 1rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     border: 2px solid black;
     border-radius: 1rem;
 }
