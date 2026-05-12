@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function LoginPage() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmpassword, setconfirmPassword] = useState("");
+  // const [confirmpassword, setConfirmPassword] = useState("");
 
   const handleChange = (event) => {
     setName(event.target.value);
@@ -36,7 +36,7 @@ function LoginPage() {
       />
 
       <input
-        value={confirmpassword}
+        // value={confirmpassword}
         onChange={handlePassword}
         className="form-input"
         placeholder="Confirm-Password: "
