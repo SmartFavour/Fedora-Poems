@@ -18,6 +18,7 @@
     margin: 10px;
     border-radius: 1rem;
     border: 1px solid black;
+    font-weight: bold;
 }
 
 .nav-button:hover {
@@ -80,6 +81,7 @@
     margin: 8px 0;
     border: 1px solid black;
     box-sizing: border-box;
+    border-radius: 1rem;
 }
 .submit-btn {
     background-color: black;
