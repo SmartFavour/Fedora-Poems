@@ -62,12 +62,15 @@
 }
 .login-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f5f7fa 20%, #c3cfe2 100%);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
+    margin: 2rem;
+    border-radius: 1rem;
 }
 .back-button {
     position: absolute;
@@ -76,7 +79,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #6c63ff;
+    background-color: mediumspringgreen;
     color: white;
     border: none;
     font-size: 18px;
@@ -88,15 +91,16 @@
     transition: all 0.3s ease;
 }
 .form-card {
+    margin: 2rem;
     background-color: white;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
     max-width: 400px;
     text-align: center;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 100, 0.2);
+    border-radius: 1rem;
 }
 
 .form-title {
@@ -105,7 +109,9 @@
     font-weight: 600;
     font-size: 28px;
 }
-
+.form-group {
+    margin-bottom: 1rem;
+}
 .form-input {
     width: 100%;
     padding: 14px;
@@ -118,14 +124,14 @@
 
 .form-input:focus {
     outline: none;
-    border-color: #6c63ff;
+    border-color: mediumspringgreen;
     box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
 }
 
 .submit-btn {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(135deg, #6c63ff 0%, #4a42d4 100%);
+    background: linear-gradient(135deg, mediumspringgreen 0%, springgreen 100%);
     color: white;
     border: none;
     border-radius: 8px;
@@ -133,12 +139,12 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
+    /*margin-top: 1rem;*/
 }
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(108, 99, 255, 0.3);
+    box-shadow: 0 8px 15px rgba(50, 255, 100, 0.7);
 }
 
 .toggle-text {

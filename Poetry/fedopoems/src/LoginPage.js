@@ -39,18 +39,18 @@ function LoginPage() {
       </div>
 
       <form onSubmit={handleSubmit} className="form-container">
-        {!isLogin && (
-          <div className="form-group">
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="form-input"
-              placeholder="Name"
-              required
-            />
-          </div>
-        )}
+        {/* {!isLogin && (*/}
+        <div className="form-group">
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="form-input"
+            placeholder="Name"
+            required
+          />
+        </div>
+        {/* // )}*/}
 
         <div className="form-group">
           <input
@@ -62,17 +62,18 @@ function LoginPage() {
             required
           />
         </div>
-
-        <div className="form-group">
-          <input
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            className="form-input"
-            placeholder="Confirm-Password: "
-            type="password"
-            required
-          />
-        </div>
+        {!isLogin && (
+          <div className="form-group">
+            <input
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              className="form-input"
+              placeholder="Confirm Password "
+              type="password"
+              required
+            />
+          </div>
+        )}
 
         <button type="submit" className="submit-btn">
           {isLogin ? "Login" : "Sign Up"}
