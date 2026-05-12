@@ -19,24 +19,21 @@ function LoginPage() {
 
   return (
     <form onSubmit={handleSubmit} className="form-container">
-      <label>
-        Name:
-        <input
-          type="text"
-          value={name}
-          onChange={handleChange}
-          className="form-input"
-        />
-      </label>
-      <label>
-        Password:
-        <input
-          type="text"
-          value={password}
-          onChange={handlePassword}
-          className="form-input"
-        />
-      </label>
+      <input
+        type="text"
+        value={name}
+        onChange={handleChange}
+        className="form-input"
+        placeholder="Name:"
+      />
+      <input
+        type="text"
+        value={password}
+        onChange={handlePassword}
+        className="form-input"
+        placeholder="Password: "
+      />
+
       <button type="submit" className="submit-btn">
         Submit
       </button>
