@@ -28,9 +28,9 @@ function LoginPage() {
 
   return (
     <div className="login-page">
-      <button className="back-button" onClick={() => window.history.back()}>
+      {/* <button className="back-button" onClick={() => window.history.back()}>
         ←
-      </button>
+      </button>*/}
 
       <div>
         <h2 className="form-title">
