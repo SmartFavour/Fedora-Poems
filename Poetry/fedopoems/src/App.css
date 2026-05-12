@@ -79,6 +79,7 @@
 .search-bar {
     border: 1rem;
     padding: 1rem;
+    width: 90%;
     font-family: Georgia, "Times New Roman", Times, serif;
     border: 2px solid black;
     border-radius: 1rem;
