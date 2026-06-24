@@ -16,7 +16,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "ChyBless Poems",
-  description: "A collection of original poetry.",
+  description: "Original poetry by Chyless.",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
