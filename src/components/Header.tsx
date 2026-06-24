@@ -8,7 +8,7 @@ export default function Header() {
           href="/"
           className="font-display text-2xl text-cocoa-700 tracking-tight"
         >
-          Her Poems
+          ChyBless Poems
         </Link>
         <Link
           href="/about"
