@@ -64,7 +64,7 @@ export default async function HomePage() {
 
         {error && (
           <p className="text-center" style={{ color: "var(--text-muted)" }}>
-            Couldn't load poems right now. Try refreshing.
+            Could not load poems right now. Try refreshing.
           </p>
         )}
 

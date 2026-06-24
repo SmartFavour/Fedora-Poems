@@ -16,7 +16,7 @@ export default function Header() {
           className="font-display text-2xl text-cocoa-700 tracking-tight"
           style={{ color: "var(--text-main)" }}
         >
-          ChyBless
+          ChyBless Poems
         </Link>
         <div className="flex items-center gap-6">
           <Link
