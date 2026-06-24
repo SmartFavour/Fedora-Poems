@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Header() {
   return (
@@ -8,14 +9,17 @@ export default function Header() {
           href="/"
           className="font-display text-2xl text-cocoa-700 tracking-tight"
         >
-          ChyBless Poems
+          ChyBless
         </Link>
-        <Link
-          href="/about"
-          className="text-sm font-medium text-cocoa-500 hover:text-mint-600 transition-colors"
-        >
-          About
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/about"
+            className="text-sm font-medium text-cocoa-500 hover:text-mint-600 transition-colors"
+          >
+            About
+          </Link>
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   );

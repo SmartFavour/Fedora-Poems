@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    /* Turquoise family — vivid, fresh, modern */
     --color-mint-50: #f0fdfa;
     --color-mint-100: #ccfbf1;
     --color-mint-200: #99f6e4;
@@ -13,7 +12,6 @@
     --color-mint-800: #115e59;
     --color-mint-900: #134e4a;
 
-    /* Chocolate family — warm, deep, rich */
     --color-cocoa-50: #fdf8f6;
     --color-cocoa-100: #f2e8e5;
     --color-cocoa-200: #eaddd7;
@@ -35,7 +33,23 @@
 
 @layer base {
     body {
-        @apply bg-cream text-cocoa-800 font-body;
+        @apply bg-cream text-cocoa-800 font-body transition-colors duration-300;
+    }
+
+    /* Dark mode — applied when <html> has class="dark" */
+    html.dark body {
+        background-color: #0f0a09;
+        color: #e0cec7;
+    }
+
+    html.dark .poem-card {
+        background-color: #1a1008;
+        border-color: #0d9488;
+    }
+
+    html.dark header {
+        background-color: rgba(15, 10, 9, 0.85);
+        border-color: #0f766e;
     }
 }
 
