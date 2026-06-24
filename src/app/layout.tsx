@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Her Poems",
+  title: "ChyBless Poems",
   description: "A collection of original poetry.",
 };
 
