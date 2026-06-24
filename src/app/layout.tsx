@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title: "ChyBless Poems",
   description: "Original poetry by Chyless.",
   icons: {
-    icon: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
