@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase-browser";
+import PhotoUpload from "@/components/PhotoUpload";
 
 type Poem = {
   id: string;
@@ -214,6 +215,19 @@ export default function DashboardPage() {
               </div>
             </div>
           ))}
+        </div>
+        <div
+          className="bg-white mt-6 p-6"
+          style={{ borderRadius: "var(--radius-card)" }}
+        >
+          <h2 className="font-display text-lg text-cocoa-800 mb-2">
+            About page photo
+          </h2>
+          <p className="text-sm text-cocoa-500 mb-4">
+            Upload a photo — it appears on the About page. Square photos work
+            best.
+          </p>
+          <PhotoUpload />
         </div>
       </section>
     </main>
