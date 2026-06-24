@@ -1,35 +1,31 @@
 @import "tailwindcss";
 
-/* ---------------------------------------------------------------------
-   Tailwind v4 lesson: this @theme block IS your design system now —
-   no separate config file. Anything defined here becomes a utility
-   class automatically. --color-mint-500 below means you can write
-   bg-mint-500, text-mint-500, border-mint-500 anywhere, instantly.
-   --------------------------------------------------------------------- */
 @theme {
-    --color-mint-50: #f2faf6;
-    --color-mint-100: #dff3e8;
-    --color-mint-200: #b9e4cd;
-    --color-mint-300: #8ed1ad;
-    --color-mint-400: #5fba8c;
-    --color-mint-500: #3fa172;
-    --color-mint-600: #2f815a;
-    --color-mint-700: #27674a;
-    --color-mint-800: #21523c;
-    --color-mint-900: #1c4433;
+    /* Turquoise family — vivid, fresh, modern */
+    --color-mint-50: #f0fdfa;
+    --color-mint-100: #ccfbf1;
+    --color-mint-200: #99f6e4;
+    --color-mint-300: #5eead4;
+    --color-mint-400: #2dd4bf;
+    --color-mint-500: #14b8a6;
+    --color-mint-600: #0d9488;
+    --color-mint-700: #0f766e;
+    --color-mint-800: #115e59;
+    --color-mint-900: #134e4a;
 
-    --color-cocoa-50: #f8f3ef;
-    --color-cocoa-100: #ecdfd4;
-    --color-cocoa-200: #d6bba3;
-    --color-cocoa-300: #bb9270;
-    --color-cocoa-400: #9c6f4d;
-    --color-cocoa-500: #7a5236;
-    --color-cocoa-600: #5e3e29;
-    --color-cocoa-700: #4a3120;
-    --color-cocoa-800: #3a271a;
-    --color-cocoa-900: #2b1d14;
+    /* Chocolate family — warm, deep, rich */
+    --color-cocoa-50: #fdf8f6;
+    --color-cocoa-100: #f2e8e5;
+    --color-cocoa-200: #eaddd7;
+    --color-cocoa-300: #e0cec7;
+    --color-cocoa-400: #d2bab0;
+    --color-cocoa-500: #bfa094;
+    --color-cocoa-600: #a18072;
+    --color-cocoa-700: #977669;
+    --color-cocoa-800: #65443c;
+    --color-cocoa-900: #271211;
 
-    --color-cream: #faf6f0;
+    --color-cream: #fdf6f0;
 
     --font-display: var(--font-playfair), serif;
     --font-body: var(--font-inter), sans-serif;
