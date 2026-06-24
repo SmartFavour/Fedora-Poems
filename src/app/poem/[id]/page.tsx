@@ -3,13 +3,18 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default async function PoemPage({ params }: { params: { id: string } }) {
+export default async function PoemPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   const supabase = await createClient();
 
   const { data: poem } = await supabase
     .from("poems")
     .select("*")
-    .eq("id", params.id)
+    .eq("id", id)
     .eq("published", true)
     .single();
 
@@ -18,7 +23,6 @@ export default async function PoemPage({ params }: { params: { id: string } }) {
   return (
     <main className="min-h-screen">
       <Header />
-
       <article className="max-w-2xl mx-auto px-6 py-16">
         <Link
           href="/"
