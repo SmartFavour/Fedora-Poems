@@ -10,9 +10,14 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-cocoa-600 leadingleading-relaxed font-body mb-4">
-          Miss is an inspiration to generation , some call her ChyBless , others
-          call her mama, her themes are inspired by life decisions and
-          consequences.
+          ChyBless is a young and inspiring poet whose work reflects the
+          realities of life, choices, and their consequences. Through her
+          poetry, she shares thoughts, experiences, and lessons that resonate
+          with people of all ages. Her writing is inspired by everyday life and
+          the decisions that shape who we become. With a creative voice and a
+          passion for storytelling, she uses poetry to encourage reflection,
+          growth, and understanding. As a young author, she continues to inspire
+          her generation through meaningful and thought-provoking poems.
         </p>
       </section>
     </main>
