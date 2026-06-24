@@ -31,26 +31,42 @@
     --radius-card: 1.25rem;
 }
 
-/* Light mode defaults */
+/* ── LIGHT MODE ───────────────────────────────────────────────
+   Warm cream background, deep chocolate text — high contrast,
+   easy to read, turquoise used only for accents and highlights.
+   ──────────────────────────────────────────────────────────── */
 :root {
     --bg-main: #fdf6f0;
     --bg-card: #ffffff;
-    --text-main: #65443c;
-    --text-soft: #977669;
-    --border-card: #ccfbf1;
-    --header-bg: rgba(253, 246, 240, 0.85);
-    --header-border: #ccfbf1;
+    --bg-hero: #1a3a38;
+    --text-main: #1c1009;
+    --text-soft: #5e3e29;
+    --text-muted: #977669;
+    --text-accent: #0d9488;
+    --border-card: #99f6e4;
+    --header-bg: rgba(253, 246, 240, 0.92);
+    --header-border: #99f6e4;
+    --tag-bg: #f0fdfa;
+    --tag-text: #0f766e;
 }
 
-/* Dark mode — flips when html has class="dark" */
+/* ── DARK MODE ────────────────────────────────────────────────
+   Deep dark background, soft warm text — moody and poetic.
+   Turquoise stays as the accent colour throughout.
+   ──────────────────────────────────────────────────────────── */
 html.dark {
-    --bg-main: #0a0f0f;
-    --bg-card: #111a1a;
-    --text-main: #e0cec7;
-    --text-soft: #bfa094;
+    --bg-main: #080d0d;
+    --bg-card: #0f1a1a;
+    --bg-hero: #050e0e;
+    --text-main: #f0e8e0;
+    --text-soft: #d2bab0;
+    --text-muted: #a18072;
+    --text-accent: #2dd4bf;
     --border-card: #0f766e;
-    --header-bg: rgba(10, 15, 15, 0.9);
+    --header-bg: rgba(8, 13, 13, 0.92);
     --header-border: #0f766e;
+    --tag-bg: #0a1f1e;
+    --tag-text: #2dd4bf;
 }
 
 @layer base {
@@ -71,5 +87,11 @@ html.dark {
         color: var(--text-main);
         @apply p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
         border-radius: var(--radius-card);
+    }
+
+    .mood-tag {
+        background-color: var(--tag-bg);
+        color: var(--tag-text);
+        @apply text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full;
     }
 }
