@@ -31,32 +31,45 @@
     --radius-card: 1.25rem;
 }
 
+/* Light mode defaults */
+:root {
+    --bg-main: #fdf6f0;
+    --bg-card: #ffffff;
+    --text-main: #65443c;
+    --text-soft: #977669;
+    --border-card: #ccfbf1;
+    --header-bg: rgba(253, 246, 240, 0.85);
+    --header-border: #ccfbf1;
+}
+
+/* Dark mode — flips when html has class="dark" */
+html.dark {
+    --bg-main: #0a0f0f;
+    --bg-card: #111a1a;
+    --text-main: #e0cec7;
+    --text-soft: #bfa094;
+    --border-card: #0f766e;
+    --header-bg: rgba(10, 15, 15, 0.9);
+    --header-border: #0f766e;
+}
+
 @layer base {
     body {
-        @apply bg-cream text-cocoa-800 font-body transition-colors duration-300;
-    }
-
-    /* Dark mode — applied when <html> has class="dark" */
-    html.dark body {
-        background-color: #0f0a09;
-        color: #e0cec7;
-    }
-
-    html.dark .poem-card {
-        background-color: #1a1008;
-        border-color: #0d9488;
-    }
-
-    html.dark header {
-        background-color: rgba(15, 10, 9, 0.85);
-        border-color: #0f766e;
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        font-family: var(--font-body);
+        transition:
+            background-color 0.3s ease,
+            color 0.3s ease;
     }
 }
 
 @layer components {
     .poem-card {
-        @apply bg-white shadow-md border border-mint-100
-           p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-card);
+        color: var(--text-main);
+        @apply p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
         border-radius: var(--radius-card);
     }
 }

@@ -84,11 +84,14 @@ export default async function HomePage() {
       <Header />
 
       {/* Hero section */}
-      <section className="relative bg-cocoa-900 text-white py-24 px-6 text-center overflow-hidden">
+      <section
+        className="relative text-white py-24 px-6 text-center overflow-hidden"
+        style={{ backgroundColor: "var(--bg-card)" }}
+      >
+        {" "}
         {/* decorative turquoise blur blobs */}
         <div className="absolute top-0 left-1/4 w-72 h-72 bg-mint-500 opacity-10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-mint-400 opacity-10 rounded-full blur-3xl" />
-
         <div className="relative max-w-2xl mx-auto">
           <p className="text-mint-400 text-sm font-medium uppercase tracking-widest mb-4">
             A poetry collection
